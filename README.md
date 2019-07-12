@@ -12,33 +12,14 @@ Works on static images (jpg tested)
 
 ## Customize your intensity
 
-* Loop for more variety in your intensity
+|Effect|Example|Result|
+|----------|-----------|-----------|
+| Loop for more variety in your intensity|`python intensify.py -f samples/waiting.gif -l 2`|![loop](samples/waiting-intensifies-loop.gif)|
+| Shake faster or slower for more calculated intensity|`python intensify.py -f samples/waiting.gif -s .1`|![fast](samples/waiting-intensifies-fast.gif)|
+|  |`python intensify.py -f samples/waiting.gif -s 10`|![slow](samples/waiting-intensifies-slow.gif)|
+| Shake more on every frame for more deliberate intensity|`python intensify.py -f samples/waiting.gif -d 5`|![multiframe](samples/waiting-intensifies-duplicate.gif) |
+| Shake farther for more intense intensity|`python intensify.py -f samples/waiting.gif --shift 10`|![combo](samples/waiting-intensifies-bigshift.gif)|
 
-`python intensify.py -f samples/waiting.gif -l 2`
-
-![loop](samples/waiting-intensifies-loop.gif)
-
-* Shake faster or slower for more calculated intensity
-
-`python intensify.py -f samples/waiting.gif -s .1`
-
-![loop](samples/waiting-intensifies-fast.gif)
-
-`python intensify.py -f samples/waiting.gif -s 10`
-
-![loop](samples/waiting-intensifies-slow.gif)
-
-* Shake more on every frame for more deliberate intensity
-
-`python intensify.py -f samples/waiting.gif -d 5`
-
-![loop](samples/waiting-intensifies-duplicate.gif)
-
-* Shake farther for more intense intensity
-
-`python intensify.py -f samples/waiting.gif --shift 10`
-
-![loop](samples/waiting-intensifies-bigshift.gif)
 
 * Combine to match your personal intensity
 

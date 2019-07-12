@@ -35,6 +35,9 @@ argument_parser.add_argument("--shift", action='store',
                              help="Max distance to shift (default 5)", default=5, required=False)
 
 if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        argument_parser.print_help()
+        exit(0)
 
     parsed_args = argument_parser.parse_args(sys.argv[1:])
 
